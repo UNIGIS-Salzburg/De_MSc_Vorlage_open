@@ -1,2 +1,3 @@
-# De_MSc_Vorlage_open
-BookDown Vorlage für den deutschsprachigen Master 
+# Vorlage
+
+Die Inhalte dieses Repo basieren auf einer modifizierten Version der nonpar Vorlage von [bookdownplus](https://github.com/pzhaonet/bookdownplus).
