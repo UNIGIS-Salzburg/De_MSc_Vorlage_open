@@ -1,0 +1,10 @@
+Free icons were used:
+https://fontawesome.com/license/free
+
+Comment block: https://fontawesome.com/icons/comment?style=solid
+Caution block: https://fontawesome.com/icons/exclamation-triangle?style=solid
+Exercise block: https://fontawesome.com/icons/pen-square?style=solid
+Insight bock: https://fontawesome.com/icons/lightbulb?style=regular
+Tip block: https://fontawesome.com/icons/info-circle?style=solid
+
+

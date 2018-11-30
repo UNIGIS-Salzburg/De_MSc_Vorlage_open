@@ -1,0 +1,22 @@
+--- 
+title: "Formatvorlage UNIGIS MSc"
+subtitle: "Subtitle"
+author: "Christian Neuwirth"
+date: "`r Sys.Date()`"
+documentclass: book
+#cover-image: cover/Frontpage_v03.pdf
+bibliography: [bib/bib.bib]
+biblio-style: apalike
+#link-citations: yes
+colorlinks: no  
+# toc: no
+lot: no
+lof: no
+site: bookdown::bookdown_site
+---
+
+# Welcome {-}
+
+bla bla bla
+
+Good luck and have fun!

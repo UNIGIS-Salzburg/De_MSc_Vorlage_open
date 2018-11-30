@@ -1,0 +1,54 @@
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{framed,color}
+\usepackage{pdfpages}
+\definecolor{shadecolor}{RGB}{248,248,248}
+
+% \ifxetex
+  % \usepackage{letltxmacro}
+  % \setlength{\XeTeXLinkMargin}{1pt}
+  % \LetLtxMacro\SavedIncludeGraphics\includegraphics
+  % \def\includegraphics#1#{% #1 catches optional stuff (star/opt. arg.)
+    % \IncludeGraphicsAux{#1}%
+  % }%
+  % \newcommand*{\IncludeGraphicsAux}[2]{%
+    % \XeTeXLinkBox{%
+      % \SavedIncludeGraphics#1{#2}%
+    % }%
+  % }%
+% \fi
+
+\newenvironment{rmdblock}[1]
+  {\begin{shaded}
+  \begin{itemize}
+  \renewcommand{\labelitemi}{
+    \raisebox{-.7\height}[0pt][0pt]{
+      {\setkeys{Gin}{width=2em,keepaspectratio}\includegraphics{images/icons/#1}}
+    }
+  }
+  \item
+  }
+  {
+  \end{itemize}
+  \end{shaded}
+  }
+\newenvironment{rmdcaution}
+  {\begin{rmdblock}{caution2}}
+  {\end{rmdblock}}
+\newenvironment{rmdinsight}
+  {\begin{rmdblock}{insight2}}
+  {\end{rmdblock}}
+\newenvironment{rmdexercise}
+  {\begin{rmdblock}{exercise2}}
+  {\end{rmdblock}}
+\newenvironment{rmdtip}
+  {\begin{rmdblock}{tip2}}
+  {\end{rmdblock}}
+\newenvironment{rmdcomment}
+  {\begin{rmdblock}{comment}}
+  {\end{rmdblock}}
+  
+%command maketitle is saved as oldmaketitle
+%the original maketitle command is turned off to prevent it from execution prior to inserting the frontpage pdf
+\let\oldmaketitle\maketitle
+\AtBeginDocument{\let\maketitle\relax}

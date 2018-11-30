@@ -1,0 +1,1 @@
+Place your external files and documents in this folder.
